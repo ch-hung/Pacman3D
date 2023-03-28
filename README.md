@@ -10,3 +10,9 @@ Project: Pacman3D
 
 Next todo
 - Wall hit
+
+#0328-1255
+- Add Wall hit
+
+Next todo
+- Dots eat & Score
