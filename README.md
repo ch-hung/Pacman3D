@@ -8,11 +8,12 @@ Project: Pacman3D
 #0328-1145
 - Add pacman movement
 
-Next todo
-- Wall hit
-
 #0328-1255
 - Add Wall hit
 
+#0328-0330
+- Add Dot action
+- Add Score count
+
 Next todo
-- Dots eat & Score
+- implement power dot
