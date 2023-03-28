@@ -8,6 +8,7 @@ public class PlayerStatus : MonoBehaviour
     private bool isPowerful;
     private float powerfulTime;
     private bool alive;
+    private bool end;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,7 @@ public class PlayerStatus : MonoBehaviour
         isPowerful = false;
         powerfulTime = 0f;
         alive = true;
+        end = false;
     }
 
     private void Update()
@@ -34,7 +36,10 @@ public class PlayerStatus : MonoBehaviour
     public void addScore(int score)
     {
         totalScore++;
-        Debug.Log("Score ++");
+        if (totalScore == 150)
+        {
+            beEnd();
+        }
     }
 
     public int getScore()
@@ -47,7 +52,6 @@ public class PlayerStatus : MonoBehaviour
     {
         isPowerful = true;
         powerfulTime = 10f;
-        Debug.Log("Power!!!!!");
     }
 
     public bool isPowered()
@@ -59,11 +63,22 @@ public class PlayerStatus : MonoBehaviour
     public void hurt()
     {
         alive = false;
-        Debug.Log("Boom!");
+        beEnd();
     }
 
     public bool isAlive()
     {
         return alive;
+    }
+
+    // End method
+    public void beEnd()
+    {
+        end = true;
+    }
+
+    public bool isEnd()
+    {
+        return end;
     }
 }

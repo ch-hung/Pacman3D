@@ -19,5 +19,10 @@ Project: Pacman3D
 - Add Power dot reaction
 - Add Enemy reaction
 
+#0328-0600
+- Add UI
+- Add Win/Lose UI
+- Add Restart botton
+
 Next todo
-- UI
+- Power dot effect
