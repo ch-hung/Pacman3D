@@ -26,3 +26,7 @@ Project: Pacman3D
 
 Next todo
 - Power dot effect
+
+Note:
+- Due to the bad map source, the Pac-man may stop on some wall that "looks straight"
+- Power Pellets lasts 10 secs (But not able to know the remain time afteer I add extra effect)
