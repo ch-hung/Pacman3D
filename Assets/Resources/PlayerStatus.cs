@@ -7,18 +7,19 @@ public class PlayerStatus : MonoBehaviour
     private int totalScore;
     private bool isPowerful;
     private float powerfulTime;
-    private bool isAlive;
+    private bool alive;
     // Start is called before the first frame update
     void Start()
     {
         totalScore = 0;
         isPowerful = false;
         powerfulTime = 0f;
-        isAlive = true;
+        alive = true;
     }
 
     private void Update()
     {
+        // Count down the powerful time
         if (isPowerful)
         {
             powerfulTime -= Time.deltaTime;
@@ -29,9 +30,11 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
+    // Score methods
     public void addScore(int score)
     {
         totalScore++;
+        Debug.Log("Score ++");
     }
 
     public int getScore()
@@ -39,9 +42,28 @@ public class PlayerStatus : MonoBehaviour
         return totalScore;
     }
 
+    // Powerful methods
     public void bePowerful()
     {
         isPowerful = true;
         powerfulTime = 10f;
+        Debug.Log("Power!!!!!");
+    }
+
+    public bool isPowered()
+    {
+        return isPowerful;
+    }
+
+    // Alive method
+    public void hurt()
+    {
+        alive = false;
+        Debug.Log("Boom!");
+    }
+
+    public bool isAlive()
+    {
+        return alive;
     }
 }

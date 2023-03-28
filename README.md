@@ -15,5 +15,9 @@ Project: Pacman3D
 - Add Dot action
 - Add Score count
 
+#0328-0400
+- Add Power dot reaction
+- Add Enemy reaction
+
 Next todo
-- implement power dot
+- UI
