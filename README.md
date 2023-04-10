@@ -35,5 +35,8 @@ Project: Pacman3D
 #0410-0810
 - Add Sound effect from >> https://downloads.khinsider.com/game-soundtracks/album/pac-man-game-sound-effects
 
+#0410-0935
+- Rescale Canvas to fit WebGL >> https://play.unity.com/mg/other/webgl-builds-333283
+
 Note:
 - Due to the bad map source, the Pac-man may stop on some wall that "looks straight"
