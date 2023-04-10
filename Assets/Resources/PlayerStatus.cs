@@ -95,6 +95,7 @@ public class PlayerStatus : MonoBehaviour
         end = true;
         audioPlayer.stopGhost();
         audioPlayer.stopPower();
+        audioPlayer.stopIntro();
         audioPlayer.playStart();
     }
 

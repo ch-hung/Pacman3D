@@ -38,5 +38,8 @@ Project: Pacman3D
 #0410-0935
 - Rescale Canvas to fit WebGL >> https://play.unity.com/mg/other/webgl-builds-333283
 
+#0410-0955
+- Fix a sound bug
+
 Note:
 - Due to the bad map source, the Pac-man may stop on some wall that "looks straight"
