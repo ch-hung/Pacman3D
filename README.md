@@ -24,9 +24,13 @@ Project: Pacman3D
 - Add Win/Lose UI
 - Add Restart botton
 
-Next todo
-- Power dot effect
+#0410-0500
+- Power dot / Enemy effect
+- Make the wall shorter to see all dots
+- Reduce the powerful time to 7 secs (from 10 sec)
+
+Next Todo
+- add portal
 
 Note:
 - Due to the bad map source, the Pac-man may stop on some wall that "looks straight"
-- Power Pellets lasts 10 secs (But not able to know the remain time afteer I add extra effect)
