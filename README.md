@@ -32,8 +32,8 @@ Project: Pacman3D
 #0410-0550
 - Add Portal
 
-Next Todo
-- Add Sound
+#0410-0810
+- Add Sound effect from >> https://downloads.khinsider.com/game-soundtracks/album/pac-man-game-sound-effects
 
 Note:
 - Due to the bad map source, the Pac-man may stop on some wall that "looks straight"

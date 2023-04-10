@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
     {
         time += Time.deltaTime;
         // Blink faster as the time expired more
-        float frequency = (playerStatus.getPowerfulTime() / 20) > 0.1 ? (playerStatus.getPowerfulTime() / 14) : 0.05f;
+        float frequency = (playerStatus.getPowerfulTime() / 20) > 0.1 ? (playerStatus.getPowerfulTime() / 20) : 0.05f;
         if (time > frequency)
         {
             if (ischanged)

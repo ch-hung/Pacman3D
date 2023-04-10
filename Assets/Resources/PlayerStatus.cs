@@ -9,14 +9,21 @@ public class PlayerStatus : MonoBehaviour
     private float powerfulTime;
     private bool alive;
     private bool end;
+
+    AudioPlayer audioPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
         totalScore = 0;
         isPowerful = false;
         powerfulTime = 0f;
         alive = true;
         end = false;
+
+        audioPlayer.playIntro();
+        audioPlayer.playGhost();
     }
 
     private void Update()
@@ -28,6 +35,8 @@ public class PlayerStatus : MonoBehaviour
             if (powerfulTime <= 0)
             {
                 isPowerful = false;
+                audioPlayer.stopPower();
+                audioPlayer.playGhost();
             }
         }
     }
@@ -36,6 +45,7 @@ public class PlayerStatus : MonoBehaviour
     public void addScore(int score)
     {
         totalScore++;
+        audioPlayer.playChomp();
         if (totalScore == 150)
         {
             beEnd();
@@ -51,7 +61,9 @@ public class PlayerStatus : MonoBehaviour
     public void bePowerful()
     {
         isPowerful = true;
-        powerfulTime = 7f;
+        audioPlayer.stopGhost();
+        audioPlayer.playPower();
+        powerfulTime = 10f;
     }
 
     public bool isPowered()
@@ -68,6 +80,7 @@ public class PlayerStatus : MonoBehaviour
     public void hurt()
     {
         alive = false;
+        audioPlayer.playDeath();
         beEnd();
     }
 
@@ -80,6 +93,9 @@ public class PlayerStatus : MonoBehaviour
     public void beEnd()
     {
         end = true;
+        audioPlayer.stopGhost();
+        audioPlayer.stopPower();
+        audioPlayer.playStart();
     }
 
     public bool isEnd()

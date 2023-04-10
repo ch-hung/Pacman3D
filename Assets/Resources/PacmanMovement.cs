@@ -36,22 +36,22 @@ public class PacmanMovement : MonoBehaviour
             if (Input.GetKey("up"))
             {
                 transform.rotation = faceUp;
-                pacmanMoveSpeed = 5f;
+                pacmanMoveSpeed = 3f;
             }
             if (Input.GetKey("down"))
             {
                 transform.rotation = faceDown;
-                pacmanMoveSpeed = 5f;
+                pacmanMoveSpeed = 3f;
             }
             if (Input.GetKey("left"))
             {
                 transform.rotation = faceLeft;
-                pacmanMoveSpeed = 5f;
+                pacmanMoveSpeed = 3f;
             }
             if (Input.GetKey("right"))
             {
                 transform.rotation = faceRight;
-                pacmanMoveSpeed = 5f;
+                pacmanMoveSpeed = 3f;
             }
 
             // Wall Hit
