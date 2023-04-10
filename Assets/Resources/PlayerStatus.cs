@@ -51,12 +51,17 @@ public class PlayerStatus : MonoBehaviour
     public void bePowerful()
     {
         isPowerful = true;
-        powerfulTime = 10f;
+        powerfulTime = 7f;
     }
 
     public bool isPowered()
     {
         return isPowerful;
+    }
+
+    public float getPowerfulTime()
+    {
+        return powerfulTime;
     }
 
     // Alive method
