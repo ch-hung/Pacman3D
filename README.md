@@ -29,8 +29,11 @@ Project: Pacman3D
 - Make the wall shorter to see all dots
 - Reduce the powerful time to 7 secs (from 10 sec)
 
+#0410-0550
+- Add Portal
+
 Next Todo
-- add portal
+- Add Sound
 
 Note:
 - Due to the bad map source, the Pac-man may stop on some wall that "looks straight"
